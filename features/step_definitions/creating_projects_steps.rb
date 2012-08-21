@@ -15,7 +15,7 @@ When /^I press "(.*?)"$/ do |arg1|
 end
 
 Then /^I should see "(.*?)"$/ do |arg1|
-  has_content? arg1
+  page.has_content? 'bloede sau'
 end
 
 Then /^I should be on the project page for "(.*?)"$/ do |arg1|

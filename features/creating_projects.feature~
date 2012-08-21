@@ -8,6 +8,6 @@ Feature: Creating projects
 		When I follow "New Project"
 		And I fill in "Name" with "TextMate"
 		And I press "Create Project"
-		Then I should see "Project has been created."
+		Then I should see "Project has been eated."
 		And I should be on the project page for "TextMate"
 		And I should see "TextMate - Projcts - Ticketee"
