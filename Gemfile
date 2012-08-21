@@ -19,6 +19,7 @@ group :test, :development do
 	gem 'rspec-rails'
 	gem 'guard-rspec'
 	gem 'spork'
+	gem 'guard-cucumber'
 	gem 'guard-spork'
 
 end
