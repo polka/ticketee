@@ -20,11 +20,11 @@ group :test, :development do
 	gem 'guard-rspec'
 	gem 'spork'
 	gem 'guard-cucumber'
-	gem 'guard-spork'
-
+	gem 'guard-spork', :git => 'git://github.com/guard/guard-spork.git'
 end
+
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', :require => false
 	gem 'capybara'
 	gem 'database_cleaner'
 end

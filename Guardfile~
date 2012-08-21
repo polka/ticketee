@@ -34,7 +34,7 @@ guard 'rspec', :version => 2 do
 end
 
 
-guard 'cucumber', :cli => '--no-profile -c --drb --format pretty' do
+guard 'cucumber', :cli => '--no-profile default -c --drb --format pretty' do
   watch(%r{^features/.+\.feature$})
   watch(%r{^features/support/.+$})          { 'features' }
   watch(%r{^features/step_definitions/(.+)_steps\.rb$}) { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'features' }
