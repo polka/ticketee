@@ -13,14 +13,11 @@ end
 
 gem 'jquery-rails'
 
-gem 'libnotify'
-
-group :test, :development do
+group :test, :rspec do
 	gem 'rspec-rails'
 	gem 'guard-rspec'
 	gem 'spork'
 	gem 'guard-spork'
-
 end
 group :test do
   gem 'cucumber-rails'
